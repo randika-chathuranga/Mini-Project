@@ -5,6 +5,7 @@
 	<link rel="stylesheet" href="{{asset('assets/plugins/select2/css/select2.min.css')}}">
 @endpush
 
+
 @push('page-header')
 <div class="col-sm-12">
 	<h3 class="page-title">Add medicines</h3>
@@ -84,6 +85,7 @@
 	</div>
 </div>
 @endsection
+
 
 @push('page-js')
 	<!-- Select2 JS -->

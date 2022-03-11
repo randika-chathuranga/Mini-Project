@@ -27,7 +27,7 @@
 				<!-- Add Medicine -->
 				<form method="post" enctype="multipart/form-data" autocomplete="off" action="{{route('add-register')}}">
 					@csrf
-					<div class="service-fields mb-3">
+					{{-- <div class="service-fields mb-3">
 						<div class="row">
 							<div class="col-lg-4">
 								<div class="form-group">
@@ -49,9 +49,55 @@
 								</div>
 							</div>
 						</div>
-					</div>
+					</div> --}}
+                    <div class="container">
+                        <div class="row justify-content-md-center">
+                          <div class="col col-lg-2"></div>
+                          <div class="col-md-auto">
+                            <div class="form-group">
+                                <label>Patient Name<span class="text-danger">*</span></label>
+                                <input class="form-control" type="text" name="patient_name" >
+                            </div>
+                          </div>
+                        <div class="col col-lg-2"></div>
+                    </div>
 
-					<div class="service-fields mb-3">
+                    <div class="container">
+                        <div class="row justify-content-md-center">
+                          <div class="col col-lg-2"></div>
+                          <div class="col-md-auto">
+                            <div class="form-group">
+                                <label>Age <span class="text-danger">*</span></label>
+                                <input class="form-control" type="text" name="age">
+                            </div>
+                          </div>
+                        <div class="col col-lg-2"></div>
+                    </div>
+
+                    <div class="container">
+                        <div class="row justify-content-md-center">
+                          <div class="col col-lg-2"></div>
+                          <div class="col-md-auto">
+                            <div class="form-group">
+                                <label>Weight <span class="text-danger">*</span></label>
+                                <input class="form-control" type="text" name="weight">
+                            </div>
+                          </div>
+                        <div class="col col-lg-2"></div>
+                    </div>
+
+                    <div class="container">
+                        <div class="row justify-content-md-center">
+                          <div class="col col-lg-2"></div>
+                          <div class="col-md-auto">
+                            <div class="form-group">
+                                <label>height<span class="text-danger">*</span></label>
+								<input class="form-control" type="text" name="height">
+                            </div>
+                          </div>
+                        <div class="col col-lg-2"></div>
+                    </div>
+					{{-- <div class="service-fields mb-3">
 						<div class="row">
 							<div class="col-sm-12">
 								<div class="form-group">
@@ -60,7 +106,7 @@
 								</div>
 							</div>
 						</div>
-					</div>
+					</div> --}}
 
 					<div class="submit-section">
 						<button class="btn btn-primary submit-btn" type="submit" name="form_submit" value="submit">Submit</button>

@@ -3,6 +3,7 @@
 @push('page-css')
 @endpush
 
+<template>
 @push('page-header')
 <div class="col-sm-12">
 	<h3 class="page-title">Welcome {{auth()->user()->name}}!</h3>
@@ -12,9 +13,10 @@
 </div>
 @endpush
 
-@section('content')
 
+@section('content')
 	<div class="row">
+
 		<div class="col-xl-3 col-sm-6 col-12">
 			<div class="card">
 				<div class="card-body">
@@ -35,6 +37,9 @@
 				</div>
 			</div>
 		</div>
+
+
+
 		<div class="col-xl-3 col-sm-6 col-12">
 			<div class="card">
 				<div class="card-body">
@@ -56,6 +61,10 @@
 				</div>
 			</div>
 		</div>
+
+
+
+
 		<div class="col-xl-3 col-sm-6 col-12">
 			<div class="card">
 				<div class="card-body">
@@ -77,6 +86,7 @@
 				</div>
 			</div>
 		</div>
+
 		<div class="col-xl-3 col-sm-6 col-12">
 			<div class="card">
 				<div class="card-body">
@@ -99,6 +109,9 @@
 			</div>
 		</div>
 	</div>
+
+
+
 	<div class="row">
 		<div class="col-sm-12">
 
@@ -169,7 +182,7 @@
 		</div>
 	</div> --}}
 @endsection
-
+</template>
 @push('page-js')
 
 @endpush

@@ -4,10 +4,10 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\RoleController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\SalesController;
-use App\Http\Controllers\BackupController;
-use App\Http\Controllers\ReportController;
+// use App\Http\Controllers\BackupController;
+// use App\Http\Controllers\ReportController;
 use App\Http\Controllers\ProductController;
-use App\Http\Controllers\SettingController;
+// use App\Http\Controllers\SettingController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\PurchaseController;
 use App\Http\Controllers\SupplierController;
@@ -113,14 +113,14 @@ Route::group(['middleware'=>['auth']],function (){
     Route::get('notification',[NotificationController::class,'markAsRead'])->name('mark-as-read');
     Route::get('notification-read',[NotificationController::class,'read'])->name('read');
 
-    Route::get('reports',[ReportController::class,'index'])->name('reports');
-    Route::post('reports',[ReportController::class,'getData']);
+    // Route::get('reports',[ReportController::class,'index'])->name('reports');
+    // Route::post('reports',[ReportController::class,'getData']);
 
 
-    Route::get('backup', [BackupController::class,'index'])->name('backup.index');
-    Route::put('backup/create', [BackupController::class,'create'])->name('backup.store');
-    Route::get('backup/download/{file_name?}', [BackupController::class,'download'])->name('backup.download');
-    Route::delete('backup/delete/{file_name?}', [BackupController::class,'destroy'])->where('file_name', '(.*)')->name('backup.destroy');
+    // Route::get('backup', [BackupController::class,'index'])->name('backup.index');
+    // Route::put('backup/create', [BackupController::class,'create'])->name('backup.store');
+    // Route::get('backup/download/{file_name?}', [BackupController::class,'download'])->name('backup.download');
+    // Route::delete('backup/delete/{file_name?}', [BackupController::class,'destroy'])->where('file_name', '(.*)')->name('backup.destroy');
 
 
 
