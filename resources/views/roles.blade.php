@@ -36,7 +36,7 @@
 						</thead>
 						<tbody>
 							@foreach ($roles as $role)
-							<tr>								
+							<tr>
 								<td>
 									{{$role->name}}
 								</td>
@@ -57,13 +57,13 @@
 									</div>
 								</td>
 							</tr>
-							@endforeach							
+							@endforeach
 						</tbody>
 					</table>
 				</div>
 			</div>
 		</div>
-	</div>			
+	</div>
 </div>
 
 <!-- Add Modal -->
@@ -87,7 +87,7 @@
 							</div>
 							<div class="form-group">
 								<lable>Select Permissions</lable>
-								<select class="select2 form-select form-control" name="permission[]" multiple="multiple"> 
+								<select class="select2 form-select form-control" name="permission[]" multiple="multiple">
 									@foreach ($permissions as $permission)
 										<option value="{{$permission->name}}">{{$permission->name}}</option>
 									@endforeach
@@ -126,14 +126,14 @@
 							</div>
 							<div class="form-group">
 								<lable>Select Permissions</lable>
-								<select class="select2 form-select form-control edit_perms" name="permission[]" multiple="multiple"> 
+								<select class="select2 form-select form-control edit_perms" name="permission[]" multiple="multiple">
 									@foreach ($permissions as $permission)
 										<option value="{{$permission->name}}">{{$permission->name}}</option>
 									@endforeach
 								</select>
 							</div>
 						</div>
-						
+
 					</div>
 					<button type="submit" class="btn btn-primary btn-block">Save Changes</button>
 				</form>
@@ -142,6 +142,7 @@
 	</div>
 </div>
 <!-- /Edit Details Modal -->
+
 
 <!-- Delete Modal -->
 <x-modals.delete :route="'roles'" :title="'Roles'" />
@@ -168,5 +169,5 @@
 			//
 		});
 	</script>
-	
+
 @endpush
