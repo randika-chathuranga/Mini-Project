@@ -30,9 +30,9 @@
 						<thead>
 							<tr>
 								<th>Patient Name</th>
-								<th>Age</th>
-								<th>Weight</th>
-								<th>Height</th>
+								<th>Age(Yrs)</th>
+								<th>Weight(Kg)</th>
+								<th>Height(cm)</th>
                                 <th class="action-btn">Action</th>
 							</tr>
 						</thead>
