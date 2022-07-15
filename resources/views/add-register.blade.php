@@ -67,7 +67,7 @@
                           <div class="col col-lg-2"></div>
                           <div class="col-md-auto">
                             <div class="form-group">
-                                <label>Age <span class="text-danger">*</span></label>
+                                <label>Age <span class="text-danger">*(Yrs)</span></label>
                                 <input class="form-control" type="text" name="age">
                             </div>
                           </div>
@@ -79,7 +79,7 @@
                           <div class="col col-lg-2"></div>
                           <div class="col-md-auto">
                             <div class="form-group">
-                                <label>Weight <span class="text-danger">*</span></label>
+                                <label>Weight <span class="text-danger">*(Kg)</span></label>
                                 <input class="form-control" type="text" name="weight">
                             </div>
                           </div>
@@ -91,7 +91,7 @@
                           <div class="col col-lg-2"></div>
                           <div class="col-md-auto">
                             <div class="form-group">
-                                <label>height<span class="text-danger">*</span></label>
+                                <label>height<span class="text-danger">*(cm)</span></label>
 								<input class="form-control" type="text" name="height">
                             </div>
                           </div>
